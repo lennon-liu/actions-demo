@@ -33,7 +33,7 @@ func multiply(num1 string, num2 string) string {
 	}
 	str := ""
 	for i3 := 0; i3 <= length; i3++ {
-		str += string(result[i3] + 48)
+		str = fmt.Sprint(str, string(result[i3]+48))
 	}
 	if str[0] == 48 {
 		str = str[1:]
