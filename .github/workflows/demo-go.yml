@@ -24,6 +24,6 @@ jobs:
         GO111MODULE: auto
 
     - name: Test
-      run: go test -v ./...
+      run: go run -v ./...
       env:
         GO111MODULE: auto

@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func multiply(num1 string, num2 string) string {
@@ -42,8 +43,10 @@ func multiply(num1 string, num2 string) string {
 }
 
 func main() {
-	num1 := "999"
-	num2 := "999"
-	fmt.Println(multiply(num1, num2))
-	fmt.Println(999 * 999)
+	for {
+		num1 := "999"
+		num2 := "999"
+		fmt.Println(multiply(num1, num2))
+		time.Sleep(time.Duration(5 * time.Second))
+	}
 }
